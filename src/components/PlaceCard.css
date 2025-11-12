@@ -1,0 +1,34 @@
+/* src/components/PlaceCard.css */
+.place-card {
+  width: auto;
+}
+
+.card-image-placeholder {
+  width: 100%;
+  height: 240px;
+  background-color: #eeeeee;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.place-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 4px;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.place-card p {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.4;
+}

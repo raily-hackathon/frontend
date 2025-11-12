@@ -1,0 +1,29 @@
+/* src/components/Header.css */
+.header-nav {
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.header-links {
+  display: flex;
+  gap: 12px;
+}
+
+.header-links a {
+  color: white;
+  opacity: 0.9;
+}
+
+.profile-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f0e68c; /* 임시 아이콘 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}

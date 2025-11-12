@@ -1,0 +1,46 @@
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 16px;
+  margin-top: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 2;
+
+  /* 🔻🔻🔻 [수정] 이 3줄을 추가합니다 🔻🔻🔻 */
+  max-width: 760px; /* PC에서 너무 넓어지지 않도록 최대 너비 설정 */
+  margin-left: auto; /* content-wrapper 내에서 중앙 정렬 */
+  margin-right: auto;
+}
+
+.search-bar-container input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  color: #333;
+}
+
+.search-bar-container input::placeholder {
+  color: #aaa;
+}
+
+.search-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-icons .icon {
+  color: #888;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search-icons .send-icon {
+  color: #35b597; /* 로고 색과 통일 */
+  font-size: 22px;
+}

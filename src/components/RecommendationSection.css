@@ -1,0 +1,21 @@
+/* src/components/RecommendationSection.css */
+.recommendation-section {
+  margin-bottom: 24px;
+}
+
+.recommendation-section h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 12px 4px;
+  color: #333;
+}
+
+.card-list {
+  display: flex; /* flex 대신 grid 사용 */
+  gap: 16px;
+
+  /* 공간이 허용하는 한 140px보다 큰 1fr(균등비율)로 채웁니다 */
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+
+  /* 가로 스크롤 관련 속성들은 모두 제거합니다 */
+}
