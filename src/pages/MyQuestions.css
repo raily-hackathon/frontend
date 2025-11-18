@@ -1,0 +1,106 @@
+/* src/pages/MyQuestions.css */
+.my-questions-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.top-section-green {
+  background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
+  padding: 20px 0 40px 0;
+  color: white;
+}
+
+.page-header {
+  margin-top: 20px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  transition: opacity 0.2s;
+}
+
+.back-button:hover {
+  opacity: 0.8;
+}
+
+.page-header h1 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.questions-content {
+  padding: 40px 0;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question-item {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.question-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.question-header h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+  flex: 1;
+}
+
+.question-date {
+  font-size: 14px;
+  color: #999;
+  white-space: nowrap;
+  margin-left: 16px;
+}
+
+.question-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer-count {
+  font-size: 14px;
+  color: #66bb6a;
+  font-weight: 500;
+}
+
+.view-button {
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.view-button:hover {
+  background-color: #43a047;
+}

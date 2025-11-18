@@ -1,45 +1,25 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header";
-import LogoSection from "./components/LogoSection";
-import SearchBar from "./components/SearchBar";
-import RecommendationSection from "./components/RecommendationSection";
-
-// 추천 카드에 들어갈 임시 데이터
-const recommendationData = {
-  title: "하레하레",
-  description:
-    "이 빵 맛있고 저 빵 맛있고 저녁 때 가면 머 어쩌고 다 팔리니까 언넝 가보셈",
-};
-
-const places = Array(4).fill(recommendationData);
+import Home from "./pages/Home";
+import MyQuestions from "./pages/MyQuestions";
+import MyTrips from "./pages/MyTrips";
+import PlaceDetail from "./pages/PlaceDetail";
+import SearchResults from "./pages/SearchResults";
 
 function App() {
   return (
-    <div className="app-container">
-      {/* 상단 녹색 영역 */}
-      <div className="top-section">
-        <div className="content-wrapper">
-          <Header />
-          <LogoSection />
-          <SearchBar />
-        </div>
+    <Router>
+      <div className="app-container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/my-questions" element={<MyQuestions />} />
+          <Route path="/my-trips" element={<MyTrips />} />
+          <Route path="/place/:id" element={<PlaceDetail />} />
+          <Route path="/search" element={<SearchResults />} />
+        </Routes>
       </div>
-
-      {/* 하단 흰색 콘텐츠 영역 */}
-      <div className="bottom-section">
-        <div className="content-wrapper">
-          <RecommendationSection
-            title="꿈돌이가 추천하는 빵집"
-            places={places}
-          />
-          <RecommendationSection
-            title="꿈돌이가 추천하는 빵집"
-            places={places}
-          />
-        </div>
-      </div>
-    </div>
+    </Router>
   );
 }
 
