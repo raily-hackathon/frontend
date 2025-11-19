@@ -5,7 +5,7 @@
 }
 
 .top-section-green {
-  background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
+  background: linear-gradient(135deg, #66bb6a 0%, #35b597 100%);
   padding: 20px 0 40px 0;
   color: white;
 }
@@ -102,5 +102,5 @@
 }
 
 .view-button:hover {
-  background-color: #43a047;
+  background-color: #35b597;
 }
