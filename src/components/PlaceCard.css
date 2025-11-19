@@ -1,6 +1,12 @@
 /* src/components/PlaceCard.css */
 .place-card {
   width: auto;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.place-card:hover {
+  transform: translateY(-4px);
 }
 
 .card-image-placeholder {

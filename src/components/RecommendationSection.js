@@ -10,7 +10,8 @@ function RecommendationSection({ title, places }) {
       <div className="card-list">
         {places.map((place, index) => (
           <PlaceCard
-            key={index}
+            key={place.id || index}
+            id={place.id || index + 1}
             title={place.title}
             description={place.description}
           />

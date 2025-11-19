@@ -1,0 +1,50 @@
+/* src/pages/SearchResults.css */
+.search-results-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.results-content {
+  padding: 40px 0;
+}
+
+.results-header {
+  margin-bottom: 32px;
+}
+
+.results-header h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.results-count {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-results p {
+  font-size: 18px;
+  color: #666;
+  margin: 8px 0;
+}
+
+.no-results-hint {
+  font-size: 14px;
+  color: #999;
+}
